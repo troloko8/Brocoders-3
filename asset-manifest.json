@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Brocoders-3/static/css/main.8d8cd586.chunk.css",
+    "main.js": "/Brocoders-3/static/js/main.46a7a15e.chunk.js",
+    "main.js.map": "/Brocoders-3/static/js/main.46a7a15e.chunk.js.map",
+    "runtime~main.js": "/Brocoders-3/static/js/runtime~main.3e818013.js",
+    "runtime~main.js.map": "/Brocoders-3/static/js/runtime~main.3e818013.js.map",
+    "static/js/2.92c07f48.chunk.js": "/Brocoders-3/static/js/2.92c07f48.chunk.js",
+    "static/js/2.92c07f48.chunk.js.map": "/Brocoders-3/static/js/2.92c07f48.chunk.js.map",
+    "index.html": "/Brocoders-3/index.html",
+    "precache-manifest.f95bcd2dd6efb93f74ca8ed9acabfc40.js": "/Brocoders-3/precache-manifest.f95bcd2dd6efb93f74ca8ed9acabfc40.js",
+    "service-worker.js": "/Brocoders-3/service-worker.js",
+    "static/css/main.8d8cd586.chunk.css.map": "/Brocoders-3/static/css/main.8d8cd586.chunk.css.map"
+  }
+}
