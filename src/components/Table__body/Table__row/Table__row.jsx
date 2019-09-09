@@ -1,16 +1,19 @@
  import React from 'react';
- import s from './Table__row.module.css'
 
-  const Table__data = (props) => {
+  const TableData = (props) => {
+
     let cellSize = props.state.cellSize;
     return (
-     <td className="table__data" style={{width: cellSize + 'px', height: cellSize + 'px'}}></td>
+     <td 
+     className="table__data" 
+     style={{width: cellSize + 'px', height: cellSize + 'px'}}
+     >{props.id} </td>
     )
   }
 
- const Table__row = (props) => {
-  
-  let tableElement = props.state.widthArray.map( cell => <Table__data state={props.state} />)
+ const TableRow = (props) => {
+
+  const tableElement = props.state.widthArray.map( cell => <TableData state={props.state}  key={cell.id} />)
 
    return (
      <tr className="table__row">
@@ -19,4 +22,4 @@
    )
  }
 
- export default Table__row;
+ export default TableRow;

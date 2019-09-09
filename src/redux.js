@@ -6,6 +6,7 @@ import {addCell} from './state'
 import {addRow} from './state'
 import {minusCell} from './state'
 import {minusRow} from './state'
+import {moveButton} from './state'
 
 
 export let renderEntireTree = (state) => {
@@ -15,5 +16,6 @@ export let renderEntireTree = (state) => {
     addRow={addRow}
     minusCell={minusCell}
     minusRow={minusRow}
+    moveButton={moveButton}
       />, document.getElementById('root'));
 }

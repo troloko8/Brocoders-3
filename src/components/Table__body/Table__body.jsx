@@ -1,10 +1,9 @@
 import React from 'react';
-import s from './Table__body.module.css'
-import Table__row from './Table__row/Table__row';
+import TableRow from './Table__row/Table__row';
 
-const Table__body = (props) => {
+const TableBody = (props) => {
 
-  let tableElement = props.state.heightArray.map( row => <Table__row state={props.state} />)
+  const tableElement = props.state.heightArray.map( row => <TableRow state={props.state} key={row.id} />)
 
   return (
     <tbody className="table__body">
@@ -13,4 +12,4 @@ const Table__body = (props) => {
   )
 }
 
-export default Table__body;
+export default TableBody;

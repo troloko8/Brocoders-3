@@ -1,8 +1,7 @@
  import React from 'react';
- import s from './Table__head.module.css'
  import RowButtons from './RowButtons/RowButtons';
 
- const Table__head = (props) => {
+ const TableHead = (props) => {
    return (
      <thead className="table__head">
        <RowButtons
@@ -10,9 +9,10 @@
         addRow={props.addRow}
         minusCell={props.minusCell}
         minusRow={props.minusRow}
+        state={props.state}
         />
      </thead>
    )
  }
 
- export default Table__head;
+ export default TableHead;
