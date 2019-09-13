@@ -1,5 +1,5 @@
 import React from 'react';
-import TableRow from './Table__row/Table__row';
+import TableRow from './TableRow/TableRow';
 
 const TableBody = (props) => {
 
