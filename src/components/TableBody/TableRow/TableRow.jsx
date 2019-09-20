@@ -1,25 +1,37 @@
- import React from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-  const TableData = (props) => {
+const TableData = (props) => {
 
-    let cellSize = props.state.cellSize;
-    return (
-     <td 
-     className="table__data" 
-     style={{width: cellSize + 'px', height: cellSize + 'px'}}
-     >{props.id} </td>
-    )
-  }
+  let cellSize = props.cellSize;
+  return (
+    < td
+      className="table__data"
+      style={{ width: cellSize + 'px', height: cellSize + 'px' }}
+    ></td>
+  )
+}
 
- const TableRow = (props) => {
+TableData.propTypes = {
+  cellSize: PropTypes.number.isRequired,
+}
 
-  const tableElement = props.state.widthArray.map( cell => <TableData state={props.state}  key={cell.id} />)
+const TableRow = (props) => {
 
-   return (
-     <tr className="table__row">
-       {tableElement}
-     </tr>
-   )
- }
+  const tableElement = props.widthArray.map(cell => <TableData
+    cellSize={props.cellSize}
+    key={cell.id} />)
 
- export default TableRow;
+  return (
+    <tr className="table__row">
+      {tableElement}
+    </tr>
+  )
+}
+
+TableRow.propTypes = {
+  cellSize: PropTypes.number.isRequired,
+  widthArray: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.number).isRequired),
+}
+
+export default TableRow;
