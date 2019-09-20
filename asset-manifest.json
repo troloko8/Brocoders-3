@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Brocoders-3/static/css/main.9698e68c.chunk.css",
-    "main.js": "/Brocoders-3/static/js/main.9d907a1d.chunk.js",
-    "main.js.map": "/Brocoders-3/static/js/main.9d907a1d.chunk.js.map",
+    "main.css": "/Brocoders-3/static/css/main.d6dc2a32.chunk.css",
+    "main.js": "/Brocoders-3/static/js/main.bfbc7428.chunk.js",
+    "main.js.map": "/Brocoders-3/static/js/main.bfbc7428.chunk.js.map",
     "runtime~main.js": "/Brocoders-3/static/js/runtime~main.3e818013.js",
     "runtime~main.js.map": "/Brocoders-3/static/js/runtime~main.3e818013.js.map",
-    "static/js/2.030d6a8e.chunk.js": "/Brocoders-3/static/js/2.030d6a8e.chunk.js",
-    "static/js/2.030d6a8e.chunk.js.map": "/Brocoders-3/static/js/2.030d6a8e.chunk.js.map",
+    "static/js/2.9a8b12ef.chunk.js": "/Brocoders-3/static/js/2.9a8b12ef.chunk.js",
+    "static/js/2.9a8b12ef.chunk.js.map": "/Brocoders-3/static/js/2.9a8b12ef.chunk.js.map",
     "index.html": "/Brocoders-3/index.html",
-    "precache-manifest.8fbd08d253eb67db6799000c9bec3970.js": "/Brocoders-3/precache-manifest.8fbd08d253eb67db6799000c9bec3970.js",
+    "precache-manifest.82cb35576b095f9ada096adbd0e1b377.js": "/Brocoders-3/precache-manifest.82cb35576b095f9ada096adbd0e1b377.js",
     "service-worker.js": "/Brocoders-3/service-worker.js",
-    "static/css/main.9698e68c.chunk.css.map": "/Brocoders-3/static/css/main.9698e68c.chunk.css.map"
+    "static/css/main.d6dc2a32.chunk.css.map": "/Brocoders-3/static/css/main.d6dc2a32.chunk.css.map"
   }
 }
