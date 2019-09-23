@@ -29,6 +29,7 @@ class App extends React.Component {
       initialHeight: 4,
       opacity: 0
     }
+
     this.visibilityButton = this.visibilityButton.bind(this)
     this.tableFn = this.tableFn.bind(this)
     this.addCell = this.addCell.bind(this)

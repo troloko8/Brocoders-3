@@ -17,6 +17,7 @@ const Button = (props) => {
     <td
       className={btnClass}
       onClick={props.click}
+      data-button={props.data}
       style={{
         visibility: props.visible,
         opacity: props.opacity,
@@ -64,28 +65,48 @@ const RowButtons = (props) => {
     props.minusRow(e.target);
   }
 
+  const eventButtons = (e) => {
+    const action = e.target.dataset.button
+
+    if (action) {
+      eval([action] + '(e)')
+    }
+  }
+
   return (
-    <tr className="row-buttons">
-      <Button name="+" styleName="button_plus-row " click={addRow} plusRow={' '} />
-      <Button name="+" styleName="button_plus-data " click={addData} plusData={' '} />
+    <tr className="row-buttons" onClick={eventButtons}>
       <Button
+        data="addRow"
+        name="+" styleName="button_plus-row "
+        // click={addRow} 
+        plusRow={' '}
+      />
+      <Button
+        data="addData"
+        name="+" styleName="button_plus-data"
+        // click={addData} 
+        plusData={' '}
+      />
+      <Button
+        data="minusRow"
         name="-"
         visible={props.visibility}
         opacity={props.opacity}
         moveX={0}
         moveY={props.transformY}
         styleName="button_minus-row"
-        click={minusRow}
+        // click={minusRow}
         minusRow={' '}
       />
       <Button
+        data="minusCell"
         name="-"
         opacity={props.opacity}
         visible={props.visibility}
         moveY={0}
         moveX={props.transformX}
         styleName="button_minus-data "
-        click={minusCell}
+        // click={minusCell}
         minusData={' '}
       />
     </tr>
