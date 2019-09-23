@@ -16,7 +16,7 @@ const Button = (props) => {
   return (
     <td
       className={btnClass}
-      onClick={props.click}
+      // onClick={props.click}
       data-button={props.data}
       style={{
         visibility: props.visible,
@@ -28,7 +28,7 @@ const Button = (props) => {
 }
 
 Button.propTypes = {
-  click: PropTypes.func.isRequired,
+  // click: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   styleName: PropTypes.string.isRequired,
   moveX: PropTypes.number,
